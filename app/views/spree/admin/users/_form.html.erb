@@ -9,6 +9,7 @@
         <%= f.email_field :email, class: 'fullwidth', disabled: true %>
       <% end %>
       <%= error_message_on :user, :email %>
+      <%= f.label :verified %> <%=f.check_box :verified %>
     <% end %>
 
     <% if can? :display, Spree::Role %>
