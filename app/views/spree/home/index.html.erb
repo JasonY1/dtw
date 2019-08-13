@@ -1,3 +1,16 @@
+<% if spree_current_user == nil %>
+  <li>
+     <%= link_to "Login", new_spree_user_session_path %>
+   </li>
+   <li>
+     <%= link_to "Register", new_spree_user_registration_path %>
+   </li>
+<% elsif spree_current_user %>
+  <div class="container text-center">
+    You're all done here. We will be verifying your account so please sit tight.
+  </div>
+<% elsif spree_current_user.verified == true || spree_current_user.admin == true %>
+
 <% content_for :sidebar do %>
   <div data-hook="homepage_sidebar_navigation">
     <%= render partial: 'spree/shared/taxonomies' %>
@@ -9,4 +22,5 @@
     <%= render partial: 'spree/shared/products', locals: { products: @products } %>
   <% end %>
 </div>
+<% end %>
 
