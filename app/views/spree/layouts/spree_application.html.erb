@@ -7,7 +7,6 @@
   <head data-hook="inside_head">
     <%= render partial: 'spree/shared/head' %>
   </head>
-  <%# if spree_current_user %>
   <body class="<%= body_class %>" id="<%= @body_id || 'default' %>" data-hook="body">
 
     <div class="container">
@@ -34,14 +33,4 @@
     </div>
 
   </body>
-  
-  <%# else %>
-  
-    <%= render partial: '/shared/landing' %>
-  
-  
-
-  </body>
-  <%# end %>
-  
 </html>
