@@ -1,3 +1,22 @@
 // Place all the styles related to the Pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+
+.navbar {
+    position: relative;
+    min-height: 110px !important;
+}
+.brand {
+    position: absolute;
+    left: 50%;
+    margin-left: -200px !important;  /* 50% of your logo width */
+    display: block;
+    height: -300px !important;
+}
+
+body { 
+  position: relative;
+  background-image: image-url("Wizard_Wands_WITHOUT.jpg");
+  background-size: cover;
+  height:100vh;
+}
