@@ -1,3 +1,15 @@
+GIT
+  remote: https://github.com/solidusio/solidus_paypal_braintree.git
+  revision: c19a733b044671a3f7be427d8d697d00e70780a0
+  branch: master
+  specs:
+    solidus_paypal_braintree (0.4.0)
+      activemerchant (~> 1.48)
+      braintree (~> 2.65)
+      solidus_api (>= 1.0, < 3)
+      solidus_core (>= 1.0, < 3)
+      solidus_support (>= 0.1.3)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -62,6 +74,8 @@ GEM
     bindex (0.8.1)
     bootsnap (1.4.4)
       msgpack (~> 1.0)
+    braintree (2.98.0)
+      builder (>= 2.0.0)
     builder (3.2.3)
     byebug (11.0.1)
     cancancan (2.3.0)
@@ -362,7 +376,6 @@ DEPENDENCIES
   bootsnap (>= 1.1.0)
   byebug
   capybara (>= 2.15)
-  carmen
   chromedriver-helper
   coffee-rails (~> 4.2)
   jbuilder (~> 2.5)
@@ -375,6 +388,7 @@ DEPENDENCIES
   solidus
   solidus_auth_devise
   solidus_gateway
+  solidus_paypal_braintree!
   spring
   spring-watcher-listen (~> 2.0.0)
   turbolinks (~> 5)

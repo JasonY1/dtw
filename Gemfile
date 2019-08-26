@@ -41,8 +41,7 @@ gem 'solidus'
 gem 'solidus_auth_devise'
 gem "solidus_gateway"
 
-gem "carmen"
-gem 'spree_paypal_express'
+gem 'solidus_paypal_braintree', github: 'solidusio/solidus_paypal_braintree', branch: :master
 
 # 
 group :development, :test do
